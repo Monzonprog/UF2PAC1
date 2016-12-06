@@ -23,8 +23,9 @@ public class MainActivity extends AppCompatActivity {
         mediaPlayer = MediaPlayer.create(this, R.raw.lust_for_life);
         nombre.setText("Lust For Life");
 
-        ImageView animacionRepro = (ImageView) findViewById(R.id.animacionView);
-        animacionRepro.setBackgroundResource(R.drawable.animacion);
+        ImageView animacionImage = (ImageView) findViewById(R.id.animacionView);
+        animacionImage.setBackgroundResource(R.drawable.animacion);
+        animacionRepro = (AnimationDrawable) animacionImage.getBackground();
 
     }
 
